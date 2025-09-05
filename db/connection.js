@@ -8,7 +8,7 @@ let db;
 
 export const connectDB = async () => {
   try {
-    await client.connect();
+
     db = client.db(process.env.DB_NAME);
     console.log("MongoDB connected");
   } catch (err) {
